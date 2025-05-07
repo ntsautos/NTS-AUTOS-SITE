@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NTS AUTOS | Luxury & Everyday Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="https://i.ibb.co/fSmDP1z/nts-autos-page-header.png" alt="NTS AUTOS Logo">
+  </div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#vehicles">Car Rental</a>
+    <a href="#sales">Car Sales</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <button onclick="scrollToAvailability()">Check Availability</button>
+  </nav>
+  <div class="nav-right">
+    <span class="phone">646-884-8101</span>
+    <div class="payments">
+      <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+      <img src="https://img.icons8.com/color/48/amex.png" alt="Amex">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/apple-pay.png" alt="Apple Pay">
+      <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay">
+    </div>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="hero-overlay">
+    <h1>Step in a V. Stand out in the Street.</h1>
+    <p>Book luxury and everyday rides across NYC.</p>
+    <div class="date-picker">
+      <input type="date" id="pickup-date">
+      <input type="date" id="return-date">
+      <button>Check Availability</button>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us">
+  <h2>Why Choose NTS AUTOS?</h2>
+  <div class="choose-grid">
+    <div class="choose-card">Exotic & Everyday Fleet</div>
+    <div class="choose-card">Affordable Daily Rates</div>
+    <div class="choose-card">Professional, VIP Service</div>
+  </div>
+</section>
+
+<section id="vehicles" class="vehicles">
+  <h2>Featured Vehicles</h2>
+  <div class="vehicle-grid">
+    <div class="vehicle-card">
+      <span class="badge popular">Most Popular</span>
+      <img src="https://cdn.jdpower.com/Models/640x480/2017-Nissan-Altima-SR.jpg" alt="Nissan Altima">
+      <h3>2017 Nissan Altima</h3>
+      <p>$150/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="vehicle-card">
+      <span class="badge new">New Arrival</span>
+      <img src="https://media.ed.edmunds-media.com/mazda/cx-9/2016/oem/2016_mazda_cx-9_4dr-suv_grand-touring_fq_oem_1_815.jpg" alt="Mazda CX-9">
+      <h3>2016 Mazda CX-9 Grand Touring</h3>
+      <p>$200/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="vehicle-card">
+      <img src="https://st.automobilemag.com/uploads/sites/11/2018/08/2018-Chrysler-300-Limited-front-three-quarter-in-motion-06.jpg" alt="300 Limited">
+      <h3>2018 Chrysler 300 Limited</h3>
+      <p>$220/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="vehicle-card">
+      <span class="badge hot">Hot Deal</span>
+      <img src="https://www.cstatic-images.com/car-pictures/xl/usc70chs021b021001.png" alt="300S">
+      <h3>2016 Chrysler 300S</h3>
+      <p>$210/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="vehicle-card">
+      <img src="https://cdn.jdpower.com/Models/640x480/2016-Nissan-Sentra-Sedan-S.jpg" alt="Sentra">
+      <h3>2016 Nissan Sentra</h3>
+      <p>$130/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+    <div class="vehicle-card">
+      <span class="badge new">New Arrival</span>
+      <img src="https://cdn.motor1.com/images/mgl/jPPyP/s1/2022-hyundai-sonata-n-line-night-edition.jpg" alt="Sonata">
+      <h3>2022 Hyundai Sonata Limited</h3>
+      <p>$250/day</p>
+      <button>Book Now</button>
+      <button class="details-btn">View Details</button>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>What Customers Say</h2>
+  <div class="testimonial-slider">
+    <blockquote>“Best rental experience ever — clean cars, great service!”<br><span>- Google Review</span></blockquote>
+    <blockquote>“TG really hooked me up! 5 stars from start to finish.”<br><span>- Yelp Review</span></blockquote>
+    <blockquote>“Booked the Altima for a weekend trip. Smooth, clean, perfect.”<br><span>- Direct Customer</span></blockquote>
+  </div>
+</section>
+
+<section class="newsletter">
+  <h2>Stay Updated</h2>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+<div class="popup-bar" id="popup-bar">
+  <p id="reservation-text">Someone in Bronx, NY just reserved a 2018 Chrysler 300.</p>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="https://i.ibb.co/fSmDP1z/nts-autos-page-header.png" alt="NTS Logo">
+    </div>
+    <div class="footer-bio">
+      <p><strong>NTS AUTOS LLC</strong> provides high-quality vehicle rentals for events, music videos, travel, and everyday needs. Based in NYC, we deliver a VIP-level experience for every client.</p>
+    </div>
+  </div>
+  <p>&copy; 2025 NTS AUTOS LLC. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

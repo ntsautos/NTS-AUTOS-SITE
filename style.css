@@ -1,0 +1,271 @@
+
+/* Reset + Base */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #ff0000;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+button {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #111, #333);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  color: #ff0000;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right .phone {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.nav-right .payments img {
+  margin: 0 3px;
+  height: 20px;
+}
+
+/* Hero */
+.hero {
+  background: url('https://cdn.motor1.com/images/mgl/jPPyP/s1/2022-hyundai-sonata-n-line-night-edition.jpg') center/cover no-repeat fixed;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.date-picker input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Why Choose Us */
+.choose-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.choose-card {
+  background: #222;
+  padding: 20px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff0000;
+  transition: transform 0.3s ease;
+}
+
+.choose-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Vehicles */
+.vehicle-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vehicle-card {
+  background: #111;
+  padding: 20px;
+  width: 220px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ff0000;
+}
+
+.vehicle-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.badge.new { background: #008000; }
+.badge.hot { background: #ffa500; }
+.badge.popular { background: #ff0000; }
+
+/* Services */
+.service-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #222;
+  padding: 20px;
+  width: 180px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial-slider blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.testimonial-slider blockquote.active {
+  opacity: 1;
+}
+
+.testimonial-slider span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Newsletter */
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  margin-left: 10px;
+}
+
+/* Popup Bar */
+.popup-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: slideUp 0.5s ease forwards;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #111, #333);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-bio {
+  max-width: 600px;
+  margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar nav {
+    display: none;
+  }
+
+  .vehicle-grid, .service-grid, .choose-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
